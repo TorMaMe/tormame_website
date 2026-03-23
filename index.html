@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TORMAME — Errand-Running & Peer-to-Peer Delivery in Ghana</title>
+  <meta name="description" content="TORMAME connects people who need items bought or fetched with nearby people willing to fulfil those requests for a commission. Built for Ghana." />
+  <meta property="og:title" content="TORMAME — Built for Ghana" />
+  <meta property="og:description" content="Order what you need. Let someone nearby get it to your doorstep." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tormame.dev" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/lucide-static@latest/font/lucide.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <img src="logo-transparent.png" alt="TorMaMe" class="nav-logo-img" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#solution">Solution</a></li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#market">Market</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#ask" class="nav-cta">Get Involved</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#problem" class="mobile-link">Problem</a>
+      <a href="#solution" class="mobile-link">Solution</a>
+      <a href="#product" class="mobile-link">Product</a>
+      <a href="#market" class="mobile-link">Market</a>
+      <a href="#impact" class="mobile-link">Impact</a>
+      <a href="#team" class="mobile-link">Team</a>
+      <a href="#ask" class="mobile-link mobile-cta">Get Involved</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg-pattern"></div>
+    <div class="container hero-content">
+      <div class="hero-logo-wrap">
+        <img src="logo-transparent.png" alt="TorMaMe" class="hero-logo-img" />
+      </div>
+      <h1 class="hero-title">
+        Errand-running and<br />
+        <span class="gradient-text">peer-to-peer delivery</span><br />
+        built for Ghana.
+      </h1>
+      <p class="hero-sub">
+        Order what you need. Let someone nearby get it to your doorstep.
+      </p>
+      <p class="hero-desc">
+        TORMAME is a Ghana-focused platform that connects people who need items bought or fetched with nearby people willing to fulfil those requests for a commission.
+      </p>
+      <div class="hero-actions">
+        <button class="btn btn-primary" id="heroContactBtn">Partner With Us</button>
+        <a href="#solution" class="btn btn-ghost">See How It Works</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ===== PROBLEM ===== -->
+  <section id="problem" class="section section-light">
+    <div class="container">
+      <div class="section-label">The Problem</div>
+      <h2 class="section-title">Everyday purchasing and delivery in Ghana is still inconvenient, unreliable, and exclusionary.</h2>
+
+      <div class="cards-grid">
+        <div class="card card-problem reveal">
+          <div class="card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+          </div>
+          <h3>People often need</h3>
+          <ul>
+            <li>Groceries, pharmacy items, food &amp; household essentials</li>
+            <li>Urgent pickups</li>
+            <li>Fast help without owning a car or motorcycle</li>
+            <li>Affordable delivery for short distances and informal errands</li>
+          </ul>
+        </div>
+        <div class="card card-problem reveal">
+          <div class="card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m4.9 4.9 14.2 14.2"/></svg>
+          </div>
+          <h3>Existing delivery models often assume</h3>
+          <ul>
+            <li>A dedicated logistics fleet</li>
+            <li>Merchants already integrated online</li>
+            <li>Drivers with vehicles</li>
+            <li>Formal addresses and high delivery fees</li>
+          </ul>
+        </div>
+        <div class="card card-highlight reveal">
+          <div class="card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+          </div>
+          <h3>The gap</h3>
+          <p>A large number of daily errands in Ghana are <strong>too small, too local, or too informal</strong> for traditional delivery platforms — yet they still matter deeply to customers.</p>
+          <blockquote>
+            "Today, many people in Ghana still rely on phone calls, favors, or ad hoc arrangements to get simple things bought and delivered. That creates friction, uncertainty, and missed economic opportunity."
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOLUTION ===== -->
+  <section id="solution" class="section section-dark">
+    <div class="container">
+      <div class="section-label light">The Solution</div>
+      <h2 class="section-title light">TorMaMe turns everyday errands into a trusted digital marketplace.</h2>
+
+      <div class="flow-grid">
+        <div class="flow-step reveal">
+          <div class="flow-num">01</div>
+          <div class="flow-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><line x1="10" x2="8" y1="9" y2="9"/></svg>
+          </div>
+          <h3>Post a request</h3>
+          <p>A sender posts what they need bought and where it should be delivered.</p>
+        </div>
+        <div class="flow-arrow">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </div>
+        <div class="flow-step reveal">
+          <div class="flow-num">02</div>
+          <div class="flow-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Runner accepts</h3>
+          <p>A nearby buyer/runner accepts the task.</p>
+        </div>
+        <div class="flow-arrow">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </div>
+        <div class="flow-step reveal">
+          <div class="flow-num">03</div>
+          <div class="flow-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+          </div>
+          <h3>Prepay &amp; escrow</h3>
+          <p>TorMaMe calculates pricing transparently. The sender prepays; funds held in escrow.</p>
+        </div>
+        <div class="flow-arrow">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </div>
+        <div class="flow-step reveal">
+          <div class="flow-num">04</div>
+          <div class="flow-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3>Deliver &amp; release</h3>
+          <p>Payment is released after delivery confirmation.</p>
+        </div>
+      </div>
+
+      <div class="why-works reveal">
+        <h3>Why it works</h3>
+        <div class="why-grid">
+          <div class="why-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="1"/><path d="m9 20 3-6 3 6"/><path d="m6 8 6 4 6-4"/></svg>
+            Accessible — fulfilment not limited to vehicle owners
+          </div>
+          <div class="why-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            Flexible for urban and peri-urban environments
+          </div>
+          <div class="why-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            Creates income opportunities for everyday people
+          </div>
+          <div class="why-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Brings structure, trust, and payments to informal errands
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY NOW ===== -->
+  <section id="whynow" class="section section-light">
+    <div class="container">
+      <div class="section-label">Why Now</div>
+      <h2 class="section-title">The timing is right for a local, mobile-first logistics network in Ghana.</h2>
+      <p class="section-sub">Connectivity, mobile money behavior, and urban density now support a trusted peer-to-peer errand network.</p>
+
+      <div class="stats-showcase reveal">
+        <div class="showcase-stat">
+          <div class="showcase-num">24.06M</div>
+          <div class="showcase-desc">Internet users in Ghana (early 2024)</div>
+        </div>
+        <div class="showcase-stat">
+          <div class="showcase-num">69.8%</div>
+          <div class="showcase-desc">Internet penetration rate</div>
+        </div>
+        <div class="showcase-stat">
+          <div class="showcase-num">38.95M</div>
+          <div class="showcase-desc">Mobile connections</div>
+        </div>
+        <div class="showcase-stat">
+          <div class="showcase-num">59.5%</div>
+          <div class="showcase-desc">Population living in urban centres</div>
+        </div>
+        <div class="showcase-stat highlight-stat">
+          <div class="showcase-num">GH&#8373;3.01T</div>
+          <div class="showcase-desc">Mobile money transaction value in 2024 (Bank of Ghana)</div>
+        </div>
+      </div>
+
+      <div class="readiness-grid reveal">
+        <div class="readiness-item">
+          <div class="readiness-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="12" x="8.5" y="2" rx="1"/><path d="M9 17H7a2 2 0 0 0-2 2v2h14v-2a2 2 0 0 0-2-2h-2"/><path d="M12 22v-5"/></svg>
+          </div>
+          <h4>App-based demand is possible</h4>
+          <p>Smartphone and internet access make app-based demand possible at scale.</p>
+        </div>
+        <div class="readiness-item">
+          <div class="readiness-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h4>Mobile money makes it work</h4>
+          <p>Mobile money makes collection, escrow, and payout viable.</p>
+        </div>
+        <div class="readiness-item">
+          <div class="readiness-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+          </div>
+          <h4>Urban density improves matching</h4>
+          <p>Urban density improves matching efficiency across our proximity-based model.</p>
+        </div>
+        <div class="readiness-item">
+          <div class="readiness-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+          </div>
+          <h4>Digital payment comfort rising</h4>
+          <p>Rising comfort with digital payments reduces adoption barriers significantly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCT ===== -->
+  <section id="product" class="section section-dark">
+    <div class="container">
+      <div class="section-label light">Product</div>
+      <h2 class="section-title light">A simple two-sided workflow designed for trust and speed.</h2>
+
+      <div class="product-grid">
+        <div class="product-card reveal">
+          <div class="product-tag sender">For Senders</div>
+          <ul class="product-list">
+            <li>Create a request — item details, purchase location, delivery location, ETA, and item size</li>
+            <li>See a full price breakdown before confirming</li>
+            <li>Pay upfront</li>
+            <li>Track the request through fulfilment</li>
+          </ul>
+        </div>
+        <div class="product-card reveal">
+          <div class="product-tag runner">For Buyers / Runners</div>
+          <ul class="product-list">
+            <li>Discover nearby requests through push notifications or the buy page</li>
+            <li>Review request details: item price, commission, ETA, and locations</li>
+            <li>Accept one job at a time</li>
+            <li>Fulfil and deliver</li>
+            <li>Receive reimbursement plus commission after confirmation</li>
+          </ul>
+        </div>
+        <div class="product-card reveal product-card-trust">
+          <div class="product-tag trust">Trust &amp; Safety</div>
+          <ul class="product-list">
+            <li>Account creation and identity workflows</li>
+            <li>Escrowed payments</li>
+            <li>One-time delivery confirmation code</li>
+            <li>Configurable notifications</li>
+            <li>Transaction history</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BUSINESS MODEL ===== -->
+  <section id="business" class="section section-light">
+    <div class="container">
+      <div class="section-label">Business Model</div>
+      <h2 class="section-title">TorMaMe earns on every successful transaction.</h2>
+
+      <div class="model-flow reveal">
+        <div class="model-step">
+          <div class="model-dot sender-dot"></div>
+          <div class="model-content">
+            <strong>Sender pays for the item</strong>
+          </div>
+        </div>
+        <div class="model-line"></div>
+        <div class="model-step">
+          <div class="model-dot runner-dot"></div>
+          <div class="model-content">
+            <strong>Buyer commission is added</strong>
+          </div>
+        </div>
+        <div class="model-line"></div>
+        <div class="model-step">
+          <div class="model-dot platform-dot"></div>
+          <div class="model-content">
+            <strong>Platform fee is added</strong>
+            <span>TorMaMe keeps the platform fee</span>
+          </div>
+        </div>
+        <div class="model-line"></div>
+        <div class="model-step highlight-step">
+          <div class="model-dot release-dot"></div>
+          <div class="model-content">
+            <strong>On confirmed delivery</strong>
+            <span>Buyer receives item reimbursement + commission. TorMaMe retains the platform fee.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-works reveal" style="margin-bottom: 48px; background: rgba(0,107,63,0.06); border-color: rgba(0,107,63,0.15);">
+        <h3 style="color: var(--green);">Why the model is strong</h3>
+        <div class="why-grid">
+          <div class="why-item" style="background: rgba(0,107,63,0.05); color: var(--text-dark);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="18" y1="20" y2="10"/><line x1="12" x2="12" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="14"/></svg>
+            Revenue tied to actual completed transactions
+          </div>
+          <div class="why-item" style="background: rgba(0,107,63,0.05); color: var(--text-dark);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/></svg>
+            Transparent fee logic
+          </div>
+          <div class="why-item" style="background: rgba(0,107,63,0.05); color: var(--text-dark);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></svg>
+            No fleet ownership required at the start
+          </div>
+          <div class="why-item" style="background: rgba(0,107,63,0.05); color: var(--text-dark);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+            Scalable through marketplace liquidity
+          </div>
+        </div>
+      </div>
+
+      <div class="revenue-streams reveal">
+        <h3>Revenue streams</h3>
+        <div class="streams-grid">
+          <div class="stream now">
+            <div class="stream-badge">Now</div>
+            <h4>Transaction platform fee</h4>
+            <p>Percentage of item price on every completed transaction.</p>
+          </div>
+          <div class="stream future">
+            <div class="stream-badge">Future</div>
+            <h4>Premium features</h4>
+            <p>Priority delivery or higher-trust profiles.</p>
+          </div>
+          <div class="stream future">
+            <div class="stream-badge">Future</div>
+            <h4>Merchant partnerships</h4>
+            <p>Local shops, pharmacies, and convenience sellers.</p>
+          </div>
+          <div class="stream future">
+            <div class="stream-badge">Future</div>
+            <h4>API / B2B integrations</h4>
+            <p>Local shops, pharmacies, office errands, and recurring purchases.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARKET ===== -->
+  <section id="market" class="section section-dark">
+    <div class="container">
+      <div class="section-label light">Market Opportunity</div>
+      <h2 class="section-title light">TorMaMe starts with a focused wedge and expands from there.</h2>
+
+      <div class="market-grid">
+        <div class="market-card reveal">
+          <h3>Initial wedge</h3>
+          <p class="market-desc">Urban, urgent, small-basket, on-demand errands in Ghana:</p>
+          <div class="errand-tags">
+            <span>Groceries</span>
+            <span>Pharmacy / health essentials</span>
+            <span>Prepared food</span>
+            <span>Household items</span>
+            <span>Personal pickups</span>
+            <span>Hyperlocal errands</span>
+          </div>
+        </div>
+        <div class="market-card reveal">
+          <h3>Expansion path</h3>
+          <div class="city-list">
+            <div class="city">Accra</div>
+            <div class="city">Kumasi</div>
+            <div class="city">Takoradi</div>
+            <div class="city">Tamale</div>
+            <div class="city">Tema</div>
+            <div class="city">University communities</div>
+            <div class="city">Corporate &amp; merchant partnerships</div>
+          </div>
+        </div>
+        <div class="market-card tam-card reveal">
+          <h3>Market sizing model</h3>
+          <p class="market-desc">A large connected population, growing digital payment usage, and high urban concentration create favorable conditions for hyperlocal, app-based fulfilment in Ghana.</p>
+          <div class="tam-item">
+            <span class="tam-label">TAM</span>
+            <span class="tam-desc">All urban last-mile errand and informal purchase-delivery spending in Ghana</span>
+          </div>
+          <div class="tam-item">
+            <span class="tam-label">SAM</span>
+            <span class="tam-desc">Smartphone-connected users in launch cities</span>
+          </div>
+          <div class="tam-item">
+            <span class="tam-label">SOM</span>
+            <span class="tam-desc">Active users reachable in first 24 months in initial launch zones</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMPETITIVE ADVANTAGE ===== -->
+  <section id="advantage" class="section section-light">
+    <div class="container">
+      <div class="section-label">Competitive Advantage</div>
+      <h2 class="section-title">TorMaMe is not just another delivery app.</h2>
+      <div class="positioning-banner reveal">
+        <p>"Traditional delivery platforms optimize around <strong>fleets and merchants</strong>.<br/>TorMaMe optimizes around <strong>people, proximity, and everyday errands</strong>."</p>
+      </div>
+
+      <div class="advantage-grid">
+        <div class="advantage-item reveal">
+          <div class="adv-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="1"/><path d="m9 20 3-6 3 6"/><path d="m6 8 6 4 6-4"/></svg></div>
+          <div><h4>No vehicle ownership requirement</h4><p>Fulfilment is not limited to vehicle owners — dramatically widening who can participate as a runner.</p></div>
+        </div>
+        <div class="advantage-item reveal">
+          <div class="adv-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+          <div><h4>Informal errand-first</h4><p>Designed for everyday, informal errands — not only restaurant or merchant networks.</p></div>
+        </div>
+        <div class="advantage-item reveal">
+          <div class="adv-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="5" height="5" x="3" y="3" rx="1"/><rect width="5" height="5" x="16" y="3" rx="1"/><rect width="5" height="5" x="3" y="16" rx="1"/><path d="M21 16h-3a2 2 0 0 0-2 2v3"/><path d="M21 21v.01"/><path d="M12 7v3a2 2 0 0 1-2 2H7"/><path d="M3 12h.01"/><path d="M12 3h.01"/><path d="M12 16v.01"/><path d="M16 12h1"/><path d="M21 12v.01"/><path d="M12 21v-1"/></svg></div>
+          <div><h4>Mobile money at the core</h4><p>Mobile money and bank rails integrated into the core transaction concept.</p></div>
+        </div>
+        <div class="advantage-item reveal">
+          <div class="adv-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+          <div><h4>Trust architecture</h4><p>Escrow and one-time confirmation code build trust between strangers.</p></div>
+        </div>
+        <div class="advantage-item reveal">
+          <div class="adv-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></div>
+          <div><h4>Local pricing logic</h4><p>Pricing reflects distance, item size, buyer commission, and platform fee — with GPRTU fare logic built in.</p></div>
+        </div>
+        <div class="advantage-item reveal">
+          <div class="adv-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></div>
+          <div><h4>Built for Ghana</h4><p>Designed specifically for Ghanaian user behavior and transport realities — not a copied marketplace.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GO TO MARKET ===== -->
+  <section id="gtm" class="section section-dark">
+    <div class="container">
+      <div class="section-label light">Go-to-Market Strategy</div>
+      <h2 class="section-title light">Launch locally. Earn trust. Build dense supply-demand loops.</h2>
+
+      <div class="phases-grid">
+        <div class="phase reveal">
+          <div class="phase-num">Phase 1</div>
+          <h3>Community Launch</h3>
+          <ul>
+            <li>Focus on one or two dense areas first</li>
+            <li>Onboard students, young workers, and local runners</li>
+            <li>Pilot in neighborhoods with repeat errand demand</li>
+            <li>Partner with small shops, pharmacies, and convenience sellers</li>
+          </ul>
+        </div>
+        <div class="phase reveal">
+          <div class="phase-num">Phase 2</div>
+          <h3>Liquidity &amp; Retention</h3>
+          <ul>
+            <li>Referral loops for both senders and buyers</li>
+            <li>Incentives for first completed orders</li>
+            <li>Strong notification and matching system</li>
+            <li>Trust-building through visible ratings, proof of delivery, and dependable payouts</li>
+          </ul>
+        </div>
+        <div class="phase reveal">
+          <div class="phase-num">Phase 3</div>
+          <h3>Expansion</h3>
+          <ul>
+            <li>Replicate into adjacent districts and cities</li>
+            <li>Add merchant tools</li>
+            <li>Add business accounts for office errands and recurring purchases</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== IMPACT ===== -->
+  <section id="impact" class="section section-dark">
+    <div class="container">
+      <div class="section-label light">Social &amp; Economic Impact</div>
+      <h2 class="section-title light">Delivery that creates opportunity, not just convenience.</h2>
+      <p class="section-sub" style="color: var(--text-lighter);">TorMaMe creates measurable community impact in three ways.</p>
+
+      <div class="impact-grid">
+        <div class="impact-card reveal" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.08);">
+          <div class="impact-num" style="color: rgba(252,209,22,0.08);">01</div>
+          <div class="impact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <h3 style="color: #fff;">Income Creation</h3>
+          <p style="color: var(--text-lighter);">TorMaMe enables flexible earnings for people who can walk, use public transport, or drive — broadening who can participate in the digital economy.</p>
+        </div>
+        <div class="impact-card reveal" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.08);">
+          <div class="impact-num" style="color: rgba(252,209,22,0.08);">02</div>
+          <div class="impact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3 style="color: #fff;">Access &amp; Convenience</h3>
+          <p style="color: var(--text-lighter);">Helps households get items they need without requiring personal transport — especially valuable in dense urban areas.</p>
+        </div>
+        <div class="impact-card reveal" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.08);">
+          <div class="impact-num" style="color: rgba(252,209,22,0.08);">03</div>
+          <div class="impact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          </div>
+          <h3 style="color: #fff;">Digital Inclusion</h3>
+          <p style="color: var(--text-lighter);">Broadens participation in digital commerce through a low-barrier fulfilment model that doesn't require merchants or vehicles to participate.</p>
+        </div>
+      </div>
+
+      <div class="impact-quote reveal" style="background: rgba(252,209,22,0.06); border-left-color: var(--gold);">
+        <p style="color: var(--text-light);">"A modest grant can help TorMaMe pilot a practical, income-generating, convenience-improving service in Ghanaian communities while creating pathways into digital work."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TECHNOLOGY ===== -->
+  <section id="tech" class="section section-light">
+    <div class="container">
+      <div class="section-label">Technology &amp; Operations</div>
+      <h2 class="section-title">Built for disciplined execution, not just concept appeal.</h2>
+
+      <div class="tech-grid">
+        <div class="tech-item reveal" style="background: var(--surface); border-color: var(--border); color: var(--text-dark);">
+          <div class="tech-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+          <span>User registration and authentication</span>
+        </div>
+        <div class="tech-item reveal" style="background: var(--surface); border-color: var(--border); color: var(--text-dark);">
+          <div class="tech-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="14" x="3" y="5" rx="2"/><path d="M3 10h18"/><path d="M7 15h.01"/><path d="M11 15h2"/></svg></div>
+          <span>National ID handling and verification workflows</span>
+        </div>
+        <div class="tech-item reveal" style="background: var(--surface); border-color: var(--border); color: var(--text-dark);">
+          <div class="tech-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <span>Google Maps distance calculation</span>
+        </div>
+        <div class="tech-item reveal" style="background: var(--surface); border-color: var(--border); color: var(--text-dark);">
+          <div class="tech-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg></div>
+          <span>Pricing engine with route-fare logic</span>
+        </div>
+        <div class="tech-item reveal" style="background: var(--surface); border-color: var(--border); color: var(--text-dark);">
+          <div class="tech-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg></div>
+          <span>Payment integrations across mobile money and banks</span>
+        </div>
+        <div class="tech-item reveal" style="background: var(--surface); border-color: var(--border); color: var(--text-dark);">
+          <div class="tech-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+          <span>Escrow and refund handling</span>
+        </div>
+        <div class="tech-item reveal" style="background: var(--surface); border-color: var(--border); color: var(--text-dark);">
+          <div class="tech-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></div>
+          <span>Notifications and real-time tracking</span>
+        </div>
+        <div class="tech-item reveal" style="background: var(--surface); border-color: var(--border); color: var(--text-dark);">
+          <div class="tech-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+          <span>Delivery confirmation and payment release logic</span>
+        </div>
+      </div>
+
+      <div class="ops-badges reveal">
+        <span class="badge" style="background: rgba(0,107,63,0.08); border-color: rgba(0,107,63,0.15); color: var(--green);">Asset-light model</span>
+        <span class="badge" style="background: rgba(0,107,63,0.08); border-color: rgba(0,107,63,0.15); color: var(--green);">Localized pricing logic</span>
+        <span class="badge" style="background: rgba(0,107,63,0.08); border-color: rgba(0,107,63,0.15); color: var(--green);">Trust architecture built-in</span>
+        <span class="badge" style="background: rgba(0,107,63,0.08); border-color: rgba(0,107,63,0.15); color: var(--green);">Phased roadmap</span>
+        <span class="badge" style="background: rgba(0,107,63,0.08); border-color: rgba(0,107,63,0.15); color: var(--green);">Mobile-first</span>
+        <span class="badge" style="background: rgba(0,107,63,0.08); border-color: rgba(0,107,63,0.15); color: var(--green);">Ghana-ready payments</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEAM ===== -->
+  <section id="team" class="section section-dark">
+    <div class="container">
+      <div class="section-label light">The Team</div>
+      <h2 class="section-title light">Building TorMaMe as a local-first platform.</h2>
+      <p class="section-sub" style="color: var(--text-lighter); margin-bottom: 0;">Our team understands the daily realities of informal errands, local delivery friction, and digital payment behavior in Ghana. We are building TorMaMe as a local-first platform — not a copied marketplace.</p>
+    </div>
+  </section>
+
+  <!-- ===== ASK / CTA ===== -->
+  <section id="ask" class="section section-dark section-ask">
+    <div class="container">
+      <div class="section-label light">The Ask</div>
+      <h2 class="section-title light">We're building the trust layer for everyday errands in Ghana.</h2>
+      <p class="ask-sub">We are raising $10,000 to launch and scale TorMaMe in Ghana — making delivery more accessible for customers and creating income opportunities for the people around them.</p>
+
+      <div class="use-of-funds reveal">
+        <h3>Use of funds</h3>
+        <div class="funds-grid">
+          <div class="fund-item">
+            <svg class="fund-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <span>Product development</span>
+          </div>
+          <div class="fund-item">
+            <svg class="fund-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+            <span>Payment integration</span>
+          </div>
+          <div class="fund-item">
+            <svg class="fund-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            <span>Launch operations</span>
+          </div>
+          <div class="fund-item">
+            <svg class="fund-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>User acquisition</span>
+          </div>
+          <div class="fund-item">
+            <svg class="fund-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <span>Trust and support systems</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ask-cta reveal">
+        <p class="ask-close">TORMAME is building the trust layer for everyday errands in Ghana — making delivery more accessible for customers and creating income opportunities for the people around them.</p>
+        <button class="btn btn-primary btn-large" id="askContactBtn">Get in Touch</button>
+        <a href="mailto:team@tormame.dev" class="ask-email">or email us directly at team@tormame.dev</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo-wrap">
+          <img src="logo-transparent.png" alt="TorMaMe" class="footer-logo-img" />
+        </div>
+        <p>Errand-running and peer-to-peer delivery built for Ghana.</p>
+        <p class="footer-tagline">Order what you need. Let someone nearby get it to your doorstep.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigate</h4>
+        <a href="#problem">The Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#product">Product</a>
+        <a href="#market">Market</a>
+        <a href="#impact">Impact</a>
+        <a href="#team">Team</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <a href="mailto:team@tormame.dev">team@tormame.dev</a>
+        <button class="btn btn-outline-sm" id="footerContactBtn">Send us a message</button>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 TORMAME. Built in Ghana for Ghana.</p>
+    </div>
+  </footer>
+
+  <!-- ===== CONTACT MODAL ===== -->
+  <div id="contactModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+      <div class="modal-header">
+        <div class="modal-logo-wrap">
+          <img src="logo-transparent.png" alt="TorMaMe" class="modal-logo-img" />
+        </div>
+        <h2 id="modalTitle">Get in Touch</h2>
+        <p>We'd love to hear from investors, partners, and community members.</p>
+      </div>
+      <form
+        action="https://formspree.io/f/xeerbnek"
+        class="modal-form"
+        method="post"
+        id="contactForm"
+      >
+        <div class="form-group">
+          <label for="email">Your Email Address *</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="title">Subject / Title *</label>
+          <input type="text" id="title" name="title" placeholder="e.g. Investment inquiry, Partnership, etc." required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us what you have in mind..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">
+          <span>Send Message</span>
+        </button>
+        <p class="form-note">We respond within 24 hours at team@tormame.dev</p>
+      </form>
+      <div id="formSuccess" class="form-success hidden">
+        <div class="success-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h3>Message sent!</h3>
+        <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
