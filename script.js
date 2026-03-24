@@ -130,3 +130,11 @@ sections.forEach(s => sectionObserver.observe(s));
 const style = document.createElement('style');
 style.textContent = `.nav-links a.active { color: #fff; }`;
 document.head.appendChild(style);
+
+/* ===== VIDEO THUMBNAIL ON END ===== */
+const demoVideo = document.getElementById('demoVideo');
+if (demoVideo) {
+  demoVideo.addEventListener('ended', () => {
+    demoVideo.load(); // resets to poster frame (thumbnail.jpeg)
+  });
+}
