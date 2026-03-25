@@ -690,7 +690,7 @@ blockquote {
 /* ===== DEMO VIDEO ===== */
 .video-wrapper {
   width: 100%;
-  max-width: 600px;
+  max-width: 860px;
   margin: 0 auto;
   border-radius: var(--radius);
   overflow: hidden;
@@ -705,11 +705,9 @@ blockquote {
 
 .video-responsive {
   position: relative;
-  padding-bottom: 177.78%; /* 9:16 for portrait/vertical video */
+  padding-bottom: 56.25%; /* 16:9 landscape */
   height: 0;
   overflow: hidden;
-  max-width: 360px;
-  margin: 0 auto;
 }
 .video-responsive iframe {
   position: absolute;
