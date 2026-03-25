@@ -63,7 +63,7 @@ function closeModal() {
 }
 
 // Trigger buttons
-['heroContactBtn', 'askContactBtn', 'footerContactBtn'].forEach(id => {
+['heroContactBtn', 'askContactBtn', 'footerContactBtn', 'backLaunchBtn'].forEach(id => {
   const btn = document.getElementById(id);
   if (btn) btn.addEventListener('click', openModal);
 });
