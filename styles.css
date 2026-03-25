@@ -537,7 +537,7 @@ blockquote {
   border-radius: 0 12px 12px 0;
   padding: 24px 32px;
 }
-.impact-quote p { font-size: 1.05rem; font-style: italic; color: var(--text-dark); line-height: 1.7; }
+.impact-quote p { font-size: 1.05rem; font-style: italic; color: var(--text-light); line-height: 1.7; }
 
 /* ===== TECH ===== */
 .tech-grid {
