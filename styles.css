@@ -582,7 +582,7 @@ blockquote {
 }
 .team-card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 8px; color: var(--text-dark); }
 .team-role { font-size: 0.82rem; color: var(--green); font-weight: 600; margin-bottom: 12px; letter-spacing: 0.04em; }
-.team-bio { font-size: 0.875rem; color: var(--text-muted); line-height: 1.6; }
+.team-bio { font-size: 0.875rem; color: var (--text-muted); line-height: 1.6; }
 
 /* ===== ASK ===== */
 .section-ask { background: var(--dark); }
@@ -690,7 +690,7 @@ blockquote {
 /* ===== DEMO VIDEO ===== */
 .video-wrapper {
   width: 100%;
-  max-width: 860px;
+  max-width: 600px;
   margin: 0 auto;
   border-radius: var(--radius);
   overflow: hidden;
@@ -701,14 +701,15 @@ blockquote {
 .video-wrapper video {
   width: 100%;
   display: block;
-  max-height: 540px;
 }
 
 .video-responsive {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 177.78%; /* 9:16 for portrait/vertical video */
   height: 0;
   overflow: hidden;
+  max-width: 360px;
+  margin: 0 auto;
 }
 .video-responsive iframe {
   position: absolute;
