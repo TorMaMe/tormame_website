@@ -1,2 +1,5 @@
 demo_video.mp4
 demo_video.webm
+
+# Local Netlify folder
+.netlify
