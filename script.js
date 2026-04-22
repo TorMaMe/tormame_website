@@ -49,40 +49,39 @@ const modalClose = document.getElementById('modalClose');
 const formSuccess = document.getElementById('formSuccess');
 const contactForm = document.getElementById('contactForm');
 
-function openModal() {
-  modal.classList.add('open');
-  document.body.style.overflow = 'hidden';
-  // Reset to form view on reopen
-  contactForm.classList.remove('hidden');
-  formSuccess.classList.add('hidden');
+if (modal && contactForm && formSuccess && modalClose) {
+  function openModal() {
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    contactForm.classList.remove('hidden');
+    formSuccess.classList.add('hidden');
+  }
+
+  function closeModal() {
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  ['heroContactBtn', 'askContactBtn', 'footerContactBtn', 'backLaunchBtn'].forEach(id => {
+    const btn = document.getElementById(id);
+    if (btn) btn.addEventListener('click', openModal);
+  });
+
+  modalClose.addEventListener('click', closeModal);
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+  });
 }
-
-function closeModal() {
-  modal.classList.remove('open');
-  document.body.style.overflow = '';
-}
-
-// Trigger buttons
-['heroContactBtn', 'askContactBtn', 'footerContactBtn', 'backLaunchBtn'].forEach(id => {
-  const btn = document.getElementById(id);
-  if (btn) btn.addEventListener('click', openModal);
-});
-
-modalClose.addEventListener('click', closeModal);
-
-// Close on overlay click
-modal.addEventListener('click', (e) => {
-  if (e.target === modal) closeModal();
-});
-
-// Close on Escape
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
-});
 
 /* ===== FORM SUBMIT (Formspree) ===== */
 window.addEventListener('load', function () {
   const form = document.getElementById('contactForm');
+  if (!form) return;
   form.addEventListener('submit', async function (e) {
     e.preventDefault();
     const btn = form.querySelector('button[type="submit"]');
@@ -108,25 +107,24 @@ window.addEventListener('load', function () {
   });
 });
 
-/* ===== ACTIVE NAV LINK HIGHLIGHTING ===== */
+/* ===== ACTIVE NAV LINK HIGHLIGHTING (landing page only) ===== */
 const sections = document.querySelectorAll('section[id]');
 const navAnchors = document.querySelectorAll('.nav-links a');
-
-const sectionObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        navAnchors.forEach(a => a.classList.remove('active'));
-        const activeLink = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
-        if (activeLink) activeLink.classList.add('active');
-      }
-    });
-  },
-  { threshold: 0.4 }
-);
-sections.forEach(s => sectionObserver.observe(s));
-
-/* ===== ADD ACTIVE LINK STYLE ===== */
-const style = document.createElement('style');
-style.textContent = `.nav-links a.active { color: #fff; }`;
-document.head.appendChild(style);
+if (sections.length && navAnchors.length) {
+  const sectionObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navAnchors.forEach(a => a.classList.remove('active'));
+          const activeLink = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+          if (activeLink) activeLink.classList.add('active');
+        }
+      });
+    },
+    { threshold: 0.4 }
+  );
+  sections.forEach(s => sectionObserver.observe(s));
+  const style = document.createElement('style');
+  style.textContent = `.nav-links a.active { color: #fff; }`;
+  document.head.appendChild(style);
+}
